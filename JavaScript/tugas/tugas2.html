@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Tugas 2 - JavaScript</title>
+        sty
+    </head>
+    <body style="background-color: #2d2d2d; padding: 20px;">
+
+        <div style="width: 400px; height: 200px;" id="box"></div>
+        <br>
+
+        <button style="border: 3px solid white; background-color: green; color: white; border-radius: 20px;" onclick="hijau()">Tombol Hijau</button>
+        <button style="border: 3px solid white; background-color: red; color: white; border-radius: 20px;" onclick="merah()">Tombol Merah</button>
+        <button style="border: 3px solid white; background-color: blue; color: white; border-radius: 20px;" onclick="biru()">Tombol Biru</button>
+
+        <script>
+            var box = document.getElementById("box");
+
+            box.style.border = "5px solid white";
+
+            function hijau()
+            {
+                box.style.backgroundColor = "green";
+            }
+
+            function merah()
+            {
+                box.style.backgroundColor = "red";
+            }
+
+            function biru()
+            {
+                box.style.backgroundColor = "blue";
+            }
+            
+        </script>
+    </body>
+</html>

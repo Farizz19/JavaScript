@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Color DOM - JavaScript</title>
+    </head>
+    <body>
+
+        <h1 id="jdl">Aplikasi Ubah Warna</h1>
+        <br>
+
+        <label>Warna Latar : </label>
+        <input type="color" id="background">
+        <hr>
+
+        <label>Warna Teks : </label>
+        <input type="color" id="text">
+        <hr>
+
+        <script>
+            var bg = document.getElementById("background");
+            var txt = document.getElementById("text");
+            var judul = document.getElementById("jdl");
+
+            bg.addEventListener("change",function()
+            {
+                document.body.style.backgroundColor = bg.value;
+            })
+
+            txt.addEventListener("change",function()
+            {
+                document.body.style.color = txt.value;
+            })
+
+            // setInterval(function ()
+            // {
+            //     judul.style.color = "red";
+
+            // setTimeout(function ()
+            // {
+            //     judul.style.color = "blue";
+            // }, 500)
+
+            // }, 1000);
+        </script>
+    </body>
+</html>

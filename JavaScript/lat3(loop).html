@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Latihan #3</title>
+    </head>
+    <body>
+
+        <input type="text" id="nilai">
+        <button onclick="bintang()">Lihat</button>
+
+        <script>
+            
+
+            function bintang() {
+                var nilai = document.getElementById("nilai").value;
+
+                for(var a = 1; a <= nilai; a++) {
+                    for(var i = 1; i <= a; i++) {
+                        document.write("*")
+                    }
+                        document.write("<br>")
+                }  
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+     <html>
+
+    <head>
+        <title>Belajar Function JavaScript</title>
+    </head>
+
+    <body>
+
+        <!-- <button onclick="sd('Fariz')">
+            Klik Saya!
+        </button> -->
+
+        <!-- <script>
+
+            // function sd(nama)
+            // {
+            //    alert("Selamat Datang " + nama); 
+            // }
+
+            // // Cara Membuat Function
+            // function identitas()
+            // {
+            //     var nama = "Fariz";
+            //     var umur = 
+
+            //     document.write("Nama : " + nama);
+            //     document.write("<br>");
+            //     document.write("Umur : " + umur);
+            // }
+
+            // // Cara Memanggil Function
+            // identitas();
+
+            // function luaspp(p,l)
+            // {
+            //     luas = p * l;
+            //     return luas;
+            // }
+
+            // document.write(luaspp(10,20));
+
+            // var p = 10;
+            // var l = 20;
+            // var hasil = luaspp(p,l);
+            // document.write(hasil);
+
+            
+        </script> -->
+
+        <script>
+
+            function luaspp()
+            {
+                var p               = document.getElementById('p');
+                var l               = document.getElementById('l');
+
+                var hasil           = document.getElementById("hasil");
+                var hasil2          = document.getElementById("hasil2");
+            
+
+                var luas            = p.value * l.value;
+                hasil.value         = luas;
+
+                // var rumus           = p.value * l.value;
+                // hasil2.innerText    = rumus;
+            
+                
+                // console.log(p.value);
+                // console.log(l.value);
+            }
+
+        </script>
+
+        <h1>Program Sederhana</h1>
+        <h2>Menghitung Luas Persegi Panjang</h2>
+        <hr>
+        <br>
+
+        <label>Nilai Panjang</label>
+        <br>
+        <input type="text" id="p">
+        <br><br>
+
+        <label>Nilai Lebar</label>
+        <br>
+        <input type="text" id="l">
+        <br><br>
+
+        <label>Luas</label>
+        <br>
+        <input type="text" id="hasil">
+        <br><br>
+
+        <!-- <div id="hasil2">...</div> -->
+
+        <br><br>
+        <button onclick="luaspp()">HASIL</button>
+        <br>
+        
+    </body>
+
+</html>

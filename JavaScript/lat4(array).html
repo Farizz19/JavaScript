@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Latihan #4 - Array</title>
+
+         <!-- CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    </head>
+    <body class="p-5">
+            <h3 class="text-info">JURUSAN SMKS TARUNA PERSADA DUMAI</h3>
+            <hr style="height: 30; color: black;">
+
+        <script>
+
+            var jurusan = ["Teknik Bisnis Sepeda Motor","Perhotelan","Kimia Industri","Elektronika Industri","Rekayasa Perangkat Lunak","Teknik Instalasi Tenaga Listrik","Teknik Kendaraan Ringan Roda Empat","Tata Kelola Perkantoran","Akuntansi dan Keuangan Lembaga","Teknik Pengelasan","Teknik Komputer Jaringan"]
+
+            var jumlah = jurusan.length;
+            
+            for(i = 0; i < jumlah; i++)
+            {
+                var no = i + 1;
+                document.write(no + "." + jurusan[i] + "<br>");
+            }
+
+            document.write("<br>Jumlah Jurusan : " + jumlah);
+            
+        </script>
+    </body>
+</html>

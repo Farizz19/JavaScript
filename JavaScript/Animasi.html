@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>AnimasiWarna - JavaScript</title>
+    </head>
+    <body style="background-color: #2d2d2d;">
+        <div class="paragraf">!!!BELI SEKARANG!!!</div>
+        <br>
+        <div class="paragraf">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et provident odio perferendis quas non laudantium! Tempora, doloremque quod! Recusandae nihil sint doloremque, tenetur explicabo eveniet dignissimos molestias quos voluptates numquam!</div>
+        <br>
+        <div class="paragraf">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, debitis. Neque quo fugiat repudiandae! Neque voluptatum velit consequatur eos itaque est eveniet libero. Molestiae, repudiandae iure autem quod eos obcaecati!</div>
+
+        <script>
+            var pg = document.getElementsByClassName("paragraf");
+
+            // console.log(pg);
+
+            setInterval(function ()
+            {
+                pg[0].style.color = "red";
+                pg[1].style.color = "blue";
+                pg[2].style.color = "gold";
+
+            setTimeout(function ()
+            {
+                pg[0].style.color = "white";
+                pg[1].style.color = "white";
+                pg[2].style.color = "white";
+            }, 500)
+
+            }, 1000);
+
+        </script>
+    </body>
+</html>

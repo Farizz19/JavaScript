@@ -1,0 +1,47 @@
+<html>
+
+    <head>
+        <title>Belajar EventMouse - JavaScript</title>
+    </head>
+
+    <body>
+
+        <!-- Mouse Enter -->
+        <button id="enter">enter</button>
+        <hr>
+        <!-- Mouse Enter End -->
+
+        <!-- Mouse Hover -->
+        <button id="hover">hover</button>
+        <hr>
+        <!-- Mouse Hover End -->
+
+        <!-- Mouse Out -->
+        <button id="out">out</button>
+        <hr>
+        <!-- Mouse Out End -->
+
+        <!-- Script Tombol -->
+        <script>
+            var enter = document.getElementById('enter')
+            enter.addEventListener('mouseenter',function()
+            {
+                enter.innerText = "Mouse Sudah Masuk";
+            });
+
+            var hover = document.getElementById('hover')
+            hover.addEventListener('mouseover',function()
+            {
+                hover.innerText = "Mouse Sudah Diatas";
+            });
+
+            var out = document.getElementById('out')
+            out.addEventListener('mouseout',function()
+            {
+                out.innerText = "Mouse Sudah Keluar";
+            });
+        </script>
+        <!-- Script Tombol End -->
+
+    </body>
+</html>
